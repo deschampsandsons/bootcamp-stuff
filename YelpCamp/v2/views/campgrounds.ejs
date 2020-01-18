@@ -1,0 +1,18 @@
+<% include partials/header %>
+
+<h1>
+	campgrounds!
+</h1>
+
+<% campgrounds.forEach((campground) =>{ %>
+	<div>
+		<h4>
+			<%= campground.name %>
+		</h4>
+</div>
+	
+<% }); %>
+<a href="/campgrounds/new">add new</a>
+<a href="/">Back</a>
+
+<% include partials/footer %>
